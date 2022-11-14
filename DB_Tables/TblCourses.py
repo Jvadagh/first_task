@@ -2,7 +2,7 @@ from fastapi import APIRouter, Body
 from sqlalchemy import create_engine, text
 
 router = APIRouter(prefix='/course', tags=['Course'])
-SQLALCHEMY_DATABASE_URL = "postgresql://test:123@localhost:5432/db"
+SQLALCHEMY_DATABASE_URL = "postgresql://changeme:changeme@localhost:5432/db"
 
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 
